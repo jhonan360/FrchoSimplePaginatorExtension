@@ -39,6 +39,8 @@ class Paginator
 
     protected $adapterFactory;
 
+    protected $pageRanges = [10, 25, 50];
+
     /**
      * @param Symfony\Component\HttpFoundation\RequestStack $requestStack
      * @param Frcho\SimplePaginatorBundle\Paginator\Adapter\AdapterFactory $adapterFactory
@@ -264,5 +266,25 @@ class Paginator
     public function getFirstPage()
     {
         return 1;
+    }
+
+    /**
+     * Set the value of pageRanges
+     *
+     * @return  self
+     */ 
+    public function setPageRanges($pageRanges)
+    {
+        $this->pageRanges = $pageRanges;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of pageRanges
+     */ 
+    public function getPageRanges()
+    {
+        return $this->pageRanges;
     }
 }

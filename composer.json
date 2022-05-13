@@ -1,6 +1,6 @@
 {
     "name": "frcho/simple-paginator-bundle",
-    "description": "Symfony 4 paginator bundle.",
+    "description": "Symfony 5 paginator bundle.",
     "keywords": ["paginator", "recordset"],
     "type": "symfony-bundle",
     "license": "",
@@ -22,9 +22,9 @@
         }
     ],
     "require": {
-        "php":             ">=8.0.2",
-        "symfony/templating": "^6.0",
-        "symfony/twig-bundle": "^6.0",
+        "php":             ">=7.4",
+        "symfony/templating": "5.4.*",
+        "symfony/twig-bundle": "5.4.*",
         "beberlei/doctrineextensions":  "^1.3"
     },
     "autoload": {
